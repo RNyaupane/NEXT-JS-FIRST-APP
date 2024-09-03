@@ -1,0 +1,59 @@
+._nav {
+    @apply fixed w-full z-20
+}
+
+._container {
+    @apply container mx-auto px-4
+}
+
+._nav_container {
+    @apply flex justify-between items-center py-4
+}
+
+._wrapper {
+    @apply text-4xl font-bold text-white cursor-pointer
+}
+
+._nav_link {
+    @apply hidden md:flex space-x-6 text-white md:gap-10
+}
+
+._nav_item {
+    @apply hover:text-blue-700
+}
+
+._active {
+    background: linear-gradient(90deg, #ff8a05, #f9bd4c);
+    background-clip: text;
+    /* color: #af7200; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+._nav_action {
+    @apply font-semibold cursor-pointer text-white px-4 py-2 shadow-lg rounded-[30px] tracking-wider hover:text-white transition;
+    background: linear-gradient(90deg, #f9572a, #ff9b05);
+}
+
+._nav_action:hover {
+    background: linear-gradient(90deg, #ff9b05, #f9572a);
+}
+
+
+/* ---------------Mobile menu--------------- */
+
+._container_sm {
+    @apply md:hidden flex items-center
+}
+
+._mobile_menu_icon {
+    @apply w-6 h-6 text-white
+}
+
+._mobile_nav_link {
+    @apply hidden md:hidden
+}
+
+._mobile_nav_item {
+    @apply block py-2 px-4 text-sm hover:bg-gray-200
+}
